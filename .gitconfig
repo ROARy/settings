@@ -1,0 +1,22 @@
+
+[credential]
+	helper = osxkeychain
+[alias]
+	st = status
+	co = checkout
+	cob = checkout -b
+	lg = log --oneline --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' -20
+	br = branch
+	amend = commit --amend --no-edit
+[pull]
+	rebase = false
+[rerere]
+	enabled=true
+[gitflow "feature.finish"]
+	push = yes
+[gitflow "bugfix.finish"]
+	push = yes
+[gitflow "hotfix.finish"]
+	push = yes
+[gitflow "release.finish"]
+	push = yes
